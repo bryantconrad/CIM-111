@@ -1,0 +1,74 @@
+body{
+    font-family: 'Roboto', sans-serif;
+    margin: 20px;
+    font-size: 100%;
+}
+
+#name{
+    text-align: center;
+    font-size: 3em;
+}
+
+.header{
+    text-align: center;
+    font-size: 1.1em;
+}
+
+#profilepic{
+    border-radius: 40px;
+}
+
+.subheading{
+    font-size: 1.8em;
+    border-left: 5px solid palevioletred;
+    background-color: lightgrey;
+    margin-bottom: 5px;
+    padding-left: 5px;
+}
+
+.entries{
+    display: grid;
+    grid-row-gap: 5px;
+    grid-template-columns: repeat(2, auto);
+    grid-auto-rows: auto;    
+    padding-left: 5px;
+}
+
+/*I used the font-variant property for the smallcaps feature in order to differentiate certain info, i.e. the name, location, and time of the experience vs. the bullet descriptions of the experience*/
+.place{
+    font-variant: small-caps;
+    font-size: 1.2em;
+}
+
+.desc{
+    grid-column: span 2;
+    padding-bottom: 2px;
+}
+
+.right{
+    text-align: right;
+}
+
+.top{
+    border-top: 1px solid purple;
+}
+
+#bottom{
+    border-bottom: 1px solid purple;
+    grid-column: span 2;
+}
+
+/*I think text-decoration is another new property. I used it because I like its underline/overline effects more than a border, and also to remove the default link underline*/
+a:hover{
+    text-decoration: underline overline plum;
+    color: palevioletred;
+}
+
+a{
+    text-decoration: none;
+    color: cornflowerblue;
+}
+
+li{
+    list-style: disc inside
+}
