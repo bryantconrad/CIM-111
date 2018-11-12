@@ -2,6 +2,27 @@ $(document).ready(function() {
 
     $(".desc").hide();
 
+    var hideStatus = true;
+
+    $("#showbtn").click(function(){
+        if(hideStatus == true){
+
+            $(".desc").slideDown(300);
+            hideStatus = false;
+            $("#showbtn").html("Hide all");
+
+        }
+        else{
+
+            $(".desc").slideUp(300);
+            hideStatus = true;
+            $("#showbtn").html("Show all");
+
+        }
+    });
+
+    //list sliding
+
     $(".item1").on({
         click: function(){
             $(".desc1").slideToggle(300);
